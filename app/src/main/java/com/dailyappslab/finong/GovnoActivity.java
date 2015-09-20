@@ -53,7 +53,7 @@ public class GovnoActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
+//kek
         return super.onOptionsItemSelected(item);
     }
 }

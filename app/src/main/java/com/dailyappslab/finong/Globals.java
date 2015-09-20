@@ -8,5 +8,5 @@ import android.graphics.drawable.Drawable;
 public class Globals {
     public static int CurrentLevel;
     public static int CurrentGold;
-    public static Drawable ZoomPicture;
+    public static Drawable ZoomPicture; //kek
 }

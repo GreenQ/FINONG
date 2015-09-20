@@ -28,3 +28,4 @@ public class LoadActivity extends AppCompatActivity {
         }, SPLASH_TIME_OUT);
     }
 }
+//kek

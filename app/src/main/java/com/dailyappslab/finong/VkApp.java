@@ -22,7 +22,7 @@ public class VkApp {
 //    private Context _context;
 //    private VkDialogListener _listener;
 //    private VkSession _vkSess;
-//
+// kek
 //    private String VK_API_URL = "https://api.vkontakte.ru/method/";
 //    private String VK_POST_TO_WALL_URL = VK_API_URL + "wall.post?";
 //    private boolean parseResponse(String jsonStr){

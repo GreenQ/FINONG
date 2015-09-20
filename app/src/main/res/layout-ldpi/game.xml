@@ -19,7 +19,8 @@
     android:id="@+id/sq1"
     android:layout_width="@dimen/square"
     android:layout_height="@dimen/square"
-    android:background="@color/frame"/>
+    android:background="@color/frame"
+    android:onClick="StartZoomedImageActivity"/>
 
     <ImageView
         android:id="@+id/sq2"
@@ -27,7 +28,8 @@
         android:layout_marginLeft="@dimen/margin_sq"
         android:layout_width="@dimen/square"
         android:layout_height="@dimen/square"
-        android:background="@color/frame"/>
+        android:background="@color/frame"
+        android:onClick="StartZoomedImageActivity"/>
 
     <ImageView
         android:id="@+id/sq3"
@@ -35,7 +37,8 @@
         android:layout_marginTop="@dimen/margin_sq"
         android:layout_width="@dimen/square"
         android:layout_height="@dimen/square"
-        android:background="@color/frame"/>
+        android:background="@color/frame"
+        android:onClick="StartZoomedImageActivity"/>
 
     <ImageView
         android:id="@+id/sq4"
@@ -45,7 +48,8 @@
         android:layout_marginLeft="@dimen/margin_sq"
         android:layout_width="@dimen/square"
         android:layout_height="@dimen/square"
-        android:background="@color/frame"/>
+        android:background="@color/frame"
+        android:onClick="StartZoomedImageActivity"/>
 
     </RelativeLayout>
 
@@ -92,7 +96,7 @@
             android:layout_marginLeft="@dimen/margin_sq"
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
-            android:background="@color/letter_sq_b"/>
+        android:background="@color/letter_sq_b"/>
 
         <Button
             android:id="@+id/btn_l_4"
@@ -190,5 +194,19 @@
             android:background="@color/letter_sq_b"/>
 
         </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adUnitId="@string/admobMiniBannerId"
+        ads:adSize="SMART_BANNER"/>
+    </LinearLayout>
 
 </RelativeLayout>

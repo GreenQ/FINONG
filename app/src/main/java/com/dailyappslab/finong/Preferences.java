@@ -23,7 +23,7 @@ public class Preferences {
         preferencesLastVisit = context.getSharedPreferences(LastVisitDate, Context.MODE_PRIVATE);
         preferencesSeqVisitAm = context.getSharedPreferences(SequencialVisitsAmount, Context.MODE_PRIVATE);
     }
-
+//kek
     private boolean CheckGoldRange(int i)
     {
         if(i >= 0 && i <= 99999)

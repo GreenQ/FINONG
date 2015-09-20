@@ -27,7 +27,7 @@ public class VkSession {
         _editor.putLong("VkAccessTime", System.currentTimeMillis());
         _editor.commit();
     }
-
+//kek
     public String[] getAccessToken(){
         String[] params = new String[4];
         params[0] = _prefs.getString("VkAccessToken", "");

@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
         textViewCurrentLevel.setText(String.valueOf(preferences.GetCurrentLevel()));
         textViewGold.setText(String.valueOf(preferences.GetGoldAmount()));
     }
-
+//kek
     @Override
     public void onWindowFocusChanged(boolean hasFocus)
     {
