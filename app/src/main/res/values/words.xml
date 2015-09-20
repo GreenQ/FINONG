@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="w1" id="1">ВЕСЫ</string>
+    <string name="w2" id="2">ЖАРА</string>
+    <string name="w3" id="3">РЕШЕНИЕ</string>
+    <string name="w4" id="4">СУШИ</string>
+    <string name="w5" id="5">ЧТЕНИЕ</string>
+    <string name="w6" id="6">АРХЕОЛОГИЯ</string>
+    <string name="w7" id="7">ВЗГЛЯД</string>
+    <string name="w8" id="8">КАПСУЛА</string>
+    <string name="w9" id="9">МОРОЗ</string>
+    <string name="w10" id="10">ПУЛЬТ</string>
+</resources>

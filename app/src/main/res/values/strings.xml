@@ -3,6 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_govno">GovnoActivity</string>
+    <string name="title_activity_zoomed_image">ZoomedImageActivity</string>
+    <string name="admobMiniBannerId">ca-app-pub-3376890691318599/3908610460</string>
 
 
 </resources>
