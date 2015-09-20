@@ -106,4 +106,4 @@ public class DailyCoins {
         }
         return 0;
     }
-}
+}//kek

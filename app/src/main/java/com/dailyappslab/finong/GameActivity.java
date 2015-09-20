@@ -65,31 +65,8 @@ public class GameActivity extends Activity {
         preferences = new Preferences(this);
         initViews();
         drawLevel();
+        showAd();
 
-        AdView adView = (AdView)this.findViewById(R.id.adView);
-        try
-        { //kek
-//            adView.setAdSize(AdSize.BANNER);
-//            adView.setAdUnitId("ca-app-pub-3376890691318599/3908610460");
-            AdRequest adRequest = new AdRequest.Builder().build();
-//
-
-            adView.loadAd(adRequest);
-
-            // ShowRateUs();
-        }
-        catch (Exception ex)
-        {
-            AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
-            dlgAlert.setMessage("Error occured" + ex.getMessage());
-            dlgAlert.setTitle("Error occured");
-            dlgAlert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                }
-            });
-            dlgAlert.setCancelable(true);
-            dlgAlert.create().show();
-        }
     }
 
     @Override
@@ -109,6 +86,12 @@ public class GameActivity extends Activity {
         sq4 = (ImageView) findViewById(R.id.sq4);
     }
 
+    private void showAd()
+    {
+        AdView adView = (AdView) this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+    }
     private void drawLevel()
     {
         DefaultGold = preferences.GetGoldAmount();
