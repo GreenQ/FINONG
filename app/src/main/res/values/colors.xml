@@ -5,4 +5,7 @@
     <color name="letter_sq_t">#ffd0d0d0</color>
     <color name="letter_t_holder">#ffece34f</color>
     <color name="letter_sq_b">#ff01d0d0</color>
+
+
+    <color name="letter_b_color">#501d2c</color>
 </resources>
