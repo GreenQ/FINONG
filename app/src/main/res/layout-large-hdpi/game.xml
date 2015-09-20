@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_panel_h"
+        android:background="@color/top_panel"
+        android:id="@+id/top_panel"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/square_place_holder"
+        android:layout_below="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_sq"
+        android:gravity="center">
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/sq1"
+            android:layout_width="@dimen/square"
+            android:layout_height="@dimen/square"
+            android:background="@color/frame"/>
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/sq2"
+            android:layout_toRightOf="@+id/sq1"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/square"
+            android:layout_height="@dimen/square"
+            android:background="@color/frame"/>
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/sq3"
+            android:layout_below="@id/sq1"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/square"
+            android:layout_height="@dimen/square"
+            android:background="@color/frame"/>
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/sq4"
+            android:layout_below="@id/sq2"
+            android:layout_toRightOf="@id/sq3"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/square"
+            android:layout_height="@dimen/square"
+            android:background="@color/frame"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/letter_t_holder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_panel_h"
+        android:layout_below="@+id/square_place_holder"
+        android:layout_marginTop="@dimen/margin_sq"
+        android:background="@color/letter_t_holder">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_sq"
+        android:layout_below="@+id/letter_t_holder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/letter_b_holder">
+
+        <Button
+            android:id="@+id/btn_l_0"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_1"
+            android:layout_toRightOf="@id/btn_l_0"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_2"
+            android:layout_toRightOf="@id/btn_l_1"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_3"
+            android:layout_toRightOf="@id/btn_l_2"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_4"
+            android:layout_toRightOf="@id/btn_l_3"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_5"
+            android:layout_toRightOf="@id/btn_l_4"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_6"
+            android:layout_toRightOf="@id/btn_l_5"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+
+
+
+        <Button
+            android:id="@+id/btn_l_7"
+            android:layout_below="@id/btn_l_0"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_8"
+            android:layout_toRightOf="@id/btn_l_0"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_below="@id/btn_l_1"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_9"
+            android:layout_toRightOf="@id/btn_l_1"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_below="@id/btn_l_2"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_10"
+            android:layout_toRightOf="@id/btn_l_2"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_below="@id/btn_l_3"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_11"
+            android:layout_toRightOf="@id/btn_l_3"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_below="@id/btn_l_4"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_12"
+            android:layout_toRightOf="@id/btn_l_4"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_below="@id/btn_l_5"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+        <Button
+            android:id="@+id/btn_l_13"
+            android:layout_toRightOf="@id/btn_l_5"
+            android:layout_marginLeft="@dimen/margin_sq"
+            android:layout_below="@id/btn_l_6"
+            android:layout_marginTop="@dimen/margin_sq"
+            android:layout_width="@dimen/letter_b"
+            android:layout_height="@dimen/letter_b"
+            android:background="@color/letter_sq_b"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adUnitId="@string/admobMiniBannerId"
+            ads:adSize="SMART_BANNER"/>
+    </LinearLayout>
+
+</RelativeLayout>
