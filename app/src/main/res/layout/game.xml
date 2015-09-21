@@ -1,12 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/letter_sq_t">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/top_panel_h"
         android:background="@color/top_panel"
-        android:id="@+id/top_panel"></RelativeLayout>
+        android:id="@+id/top_panel"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/strelaRelLay_w"
+            android:layout_height="@dimen/wind_blokcs_h"
+            android:background="@color/holder_top_panel"
+            android:layout_marginLeft="@dimen/strelaRelLay_margin"></RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/monets_lvl_shop"
+            android:layout_height="@dimen/wind_blokcs_h"
+            android:layout_marginLeft="@dimen/strelaRelLay_margin">
+
+            <RelativeLayout
+                android:id="@+id/lvl"
+                android:layout_width="@dimen/lvl_w"
+                android:layout_height="@dimen/wind_blokcs_h"
+                android:background="@color/holder_top_panel"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="@dimen/lvl_txt_size"
+                    android:textColor="@color/lvl_txt_color"/>
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coins"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/coins_w"
+            android:layout_height="@dimen/wind_blokcs_h"
+            android:background="@color/holder_top_panel"
+            android:layout_marginRight="@dimen/strelaRelLay_margin">
+
+            <TextView
+                android:id="@+id/shop"
+                android:layout_toLeftOf="@+id/coins_crt"
+                android:layout_width="@dimen/coins_img"
+                android:layout_height="@dimen/coins_img"
+                android:text="+"
+                android:layout_marginLeft="@dimen/strelaRelLay_margin"
+                android:textSize="@dimen/lvl_txt_coins"
+                android:textColor="@color/lvl_coins_color"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/coins_crt"
+                android:layout_toLeftOf="@+id/coins_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:layout_marginLeft="@dimen/wind_margin"
+                android:textSize="@dimen/lvl_txt_coins"
+                android:textColor="@color/lvl_coins_color"/>
+
+            <ImageView
+                android:id="@+id/coins_img"
+                android:layout_width="@dimen/coins_img"
+                android:layout_height="@dimen/coins_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/wind_margin"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/square_place_holder"
@@ -56,7 +134,7 @@
     <RelativeLayout
         android:id="@+id/letter_t_holder"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/top_panel_h"
+        android:layout_height="@dimen/letter_t_holder"
         android:layout_below="@+id/square_place_holder"
         android:layout_marginTop="@dimen/margin_sq"
         android:background="@color/letter_t_holder">
@@ -68,13 +146,14 @@
         android:layout_marginTop="@dimen/margin_sq"
         android:layout_below="@+id/letter_t_holder"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/letter_b_holder">
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/btn_l_0"
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -85,6 +164,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -95,6 +175,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -105,6 +186,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -115,6 +197,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -125,6 +208,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -134,9 +218,10 @@
             android:layout_marginLeft="@dimen/margin_sq"
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
-            android:text="A"
-            android:textColor="@color/letter_b_color"
-            android:background="@color/letter_sq_b"/>
+            android:text="\?"
+            android:textSize="@dimen/text_size_bot_btn"
+            android:textColor="@color/hints_square_txt"
+            android:background="@color/hints_square"/>
 
 
 
@@ -148,6 +233,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -160,6 +246,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -172,6 +259,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -184,6 +272,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -196,6 +285,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -208,6 +298,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 
@@ -220,6 +311,7 @@
             android:layout_width="@dimen/letter_b"
             android:layout_height="@dimen/letter_b"
             android:text="A"
+            android:textSize="@dimen/text_size_bot_btn"
             android:textColor="@color/letter_b_color"
             android:background="@color/letter_sq_b"/>
 

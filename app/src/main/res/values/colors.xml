@@ -8,4 +8,11 @@
 
 
     <color name="letter_b_color">#501d2c</color>
+    <color name="letter_t_color">#501d2c</color>
+
+    <color name="hints_square_txt">#ffffff</color>
+    <color name="hints_square">#ff0053</color>
+    <color name="holder_top_panel">#e5bd9a</color>
+    <color name="lvl_txt_color">#243212</color>
+    <color name="lvl_coins_color">#243212</color>
 </resources>
