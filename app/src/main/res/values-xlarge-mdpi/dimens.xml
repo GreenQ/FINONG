@@ -2,36 +2,36 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
 
-    <dimen name="square">140dp</dimen>
-    <dimen name="margin_sq">5dp</dimen>
-    <dimen name="top_panel_h">35dp</dimen>
+    <dimen name="square">250dp</dimen>
+    <dimen name="margin_sq">10dp</dimen>
+    <dimen name="top_panel_h">65dp</dimen>
     <dimen name="letter_t">30dp</dimen>
-    <dimen name="letter_b">38dp</dimen>
+    <dimen name="letter_b">70dp</dimen>
     <dimen name="letter_b_holder">85dp</dimen>
-    <dimen name="letter_t_holder">30dp</dimen>
+    <dimen name="letter_t_holder">60dp</dimen>
 
 
     <dimen name="margin_top_btn">1dp</dimen>
-    <dimen name="text_size_top_btn">20sp</dimen>
-    <dimen name="text_size_bot_btn">22sp</dimen>
+    <dimen name="text_size_top_btn">58sp</dimen>
+    <dimen name="text_size_bot_btn">60sp</dimen>
 
 
-    <dimen name="strelaRelLay_w">50dp</dimen>
-    <dimen name="lvl_w">50dp</dimen>
-    <dimen name="coins_w">100dp</dimen>
-    <dimen name="monets_lvl_shop">50dp</dimen>
-    <dimen name="lvl_txt_size">20sp</dimen>
-    <dimen name="lvl_txt_coins">20sp</dimen>
+    <dimen name="strelaRelLay_w">100dp</dimen>
+    <dimen name="lvl_w">100dp</dimen>
+    <dimen name="coins_w">130dp</dimen>
+    <dimen name="monets_lvl_shop">100dp</dimen>
+    <dimen name="lvl_txt_size">30sp</dimen>
+    <dimen name="lvl_txt_coins">30sp</dimen>
 
-    <dimen name="wind_blokcs_h">25dp</dimen>
+    <dimen name="wind_blokcs_h">55dp</dimen>
 
     <dimen name="coins_img">20dp</dimen>
     <dimen name="wind_margin">2dp</dimen>
 
-    <dimen name="strelaRelLay_margin">5dp</dimen>
+    <dimen name="strelaRelLay_margin">10dp</dimen>
 
-
-
+    <dimen name="padding_img_holder">7dp</dimen>
+    <dimen name="shop_img">20dp</dimen>
 
 
 </resources>

@@ -22,6 +22,7 @@
     <dimen name="monets_lvl_shop">50dp</dimen>
     <dimen name="lvl_txt_size">20sp</dimen>
     <dimen name="lvl_txt_coins">20sp</dimen>
+    <dimen name="shop_img">20dp</dimen>
 
     <dimen name="wind_blokcs_h">25dp</dimen>
 
@@ -30,7 +31,7 @@
 
     <dimen name="strelaRelLay_margin">5dp</dimen>
 
-
+    <dimen name="padding_img_holder">7dp</dimen>
 
 
 

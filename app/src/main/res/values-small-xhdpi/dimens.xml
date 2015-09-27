@@ -2,7 +2,7 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
 
-    <dimen name="square">100dp</dimen>
+    <dimen name="square">105dp</dimen>
     <dimen name="margin_sq">5dp</dimen>
     <dimen name="top_panel_h">30dp</dimen>
     <dimen name="letter_t">30dp</dimen>
@@ -30,8 +30,8 @@
 
     <dimen name="strelaRelLay_margin">5dp</dimen>
 
+    <dimen name="padding_img_holder">7dp</dimen>
 
-
-
+    <dimen name="shop_img">20dp</dimen>
 
 </resources>

@@ -29,9 +29,9 @@
     <dimen name="wind_margin">2dp</dimen>
 
     <dimen name="strelaRelLay_margin">5dp</dimen>
+    <dimen name="padding_img_holder">7dp</dimen>
 
-
-
+    <dimen name="shop_img">20dp</dimen>
 
 
 </resources>
