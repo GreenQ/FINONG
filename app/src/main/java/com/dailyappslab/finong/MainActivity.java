@@ -4,7 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.startad.lib.SADView;
 
 public class MainActivity extends Activity {
 
@@ -12,15 +17,29 @@ public class MainActivity extends Activity {
     TextView textViewGold;
     int goldBonus;
     boolean wasShown = false;
+    SADView sadView;
 
     Preferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.main);
         preferences = new Preferences(this);
-        initViews();
+//        initViews();
+
+        sadView = new SADView(this, getResources().getString(R.string.sadViewMiniBanner));
+        LinearLayout layout = (LinearLayout)findViewById(R.id.admob);
+
+        // Add the adView to it
+        layout.addView(this.sadView);
+        sadView.loadAd(SADView.LANGUAGE_RU);
+
+        StartDailyCoinsActivity(null);
     }
 
     public void StartGovnoActivity(View view)
@@ -31,13 +50,29 @@ public class MainActivity extends Activity {
         overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
     }
 
+    public void StartGameActivity(View view)
+    {
+        Intent i = new Intent(MainActivity.this, GameActivity.class);
+        startActivity(i);
+
+        overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
+    }
+
+    public void StartDailyCoinsActivity(View view)
+    {
+        Intent i = new Intent(MainActivity.this, DailyCoinsActivity.class);
+        startActivity(i);
+
+        overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
+    }
+
     @Override
     public void onResume(){
         super.onResume();
         // Описать считывание текущего кол-ва монет и уровня с preferences
 
-        textViewCurrentLevel.setText(String.valueOf(preferences.GetCurrentLevel()));
-        textViewGold.setText(String.valueOf(preferences.GetGoldAmount()));
+        //textViewCurrentLevel.setText(String.valueOf(preferences.GetCurrentLevel()));
+        //textViewGold.setText(String.valueOf(preferences.GetGoldAmount()));
     }
 //kek
     @Override
@@ -49,11 +84,11 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void initViews()
-    {
-        textViewCurrentLevel = (TextView) findViewById(R.id.textViewCurLevel);
-        textViewGold = (TextView) findViewById(R.id.textViewGold);
-    }
+//    private void initViews()
+//    {
+//        textViewCurrentLevel = (TextView) findViewById(R.id.textViewCurLevel);
+//        textViewGold = (TextView) findViewById(R.id.textViewGold);
+//    }
 
     private void getDailyCoins()
     {

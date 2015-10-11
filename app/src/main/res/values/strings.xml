@@ -9,4 +9,11 @@
     <string name="admobMiniBannerId">ca-app-pub-3376890691318599/3908610460</string>
 
 
+    <string name="text_activity1">Это первое Activity</string>
+    <string name="text_activity2">Это второе Activity</string>
+
+
+
+    <string name="sadViewMiniBanner">5521303021b94d2b00000000</string>
+
 </resources>

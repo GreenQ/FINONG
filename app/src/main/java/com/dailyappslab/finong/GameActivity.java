@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -74,8 +75,30 @@ public class GameActivity extends Activity {
         initViews();
         drawLevel();
         showAd();
+        //setHeight();
 
     }
+
+//    private void setHeight()
+//    {
+//        //btn_l_0
+//
+//        for(int i = 0; i < 13; i++)
+//        {
+//            if(i == 13) {
+//                return;
+//            }
+//            //findViewById(R.id.imageButtonLetter1);
+//            int id = getResources().getIdentifier("btn_1_" + i, "id", this.getPackageName());
+//            Button temp = (Button) findViewById(id);
+//            //temp.
+//            //temp.setImageResource(getResources().getIdentifier("letter_" + letters.GetLetterIndex(wordArray[i]), "drawable", this.getPackageName()));
+//            temp.setHeight(temp.getWidth());
+//            //temp.setVisibility(View.VISIBLE);
+//            //storedLetters[i][0] = wordArray[i];
+//            // }
+//        }
+//    }
 
     @Override
     public void onResume(){
@@ -84,6 +107,30 @@ public class GameActivity extends Activity {
 
 //        textViewCurrentLevel.setText(String.valueOf(preferences.GetCurrentLevel()));
 //        textViewGold.setText(String.valueOf(preferences.GetGoldAmount()));
+    }
+
+    public void StartHintsActivity(View view)
+    {
+        Intent i = new Intent(GameActivity.this, HintsActivity.class);
+        startActivity(i);
+
+        overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
+    }
+
+    public void StartMarketActivity(View view)
+    {
+        Intent i = new Intent(GameActivity.this, MarketActivity.class);
+        startActivity(i);
+
+        overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
+    }
+
+    public void StartWinActivity(View view)
+    {
+        Intent i = new Intent(GameActivity.this, WinActivity.class);
+        startActivity(i);
+
+        overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
     }
 
     private void initViews()

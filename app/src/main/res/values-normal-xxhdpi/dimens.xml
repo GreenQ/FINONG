@@ -2,17 +2,17 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
 
-    <dimen name="square">160dp</dimen>
+    <dimen name="square">140dp</dimen>
     <dimen name="margin_sq">5dp</dimen>
-    <dimen name="top_panel_h">35dp</dimen>
-    <dimen name="letter_t">30dp</dimen>
-    <dimen name="letter_b">43dp</dimen>
+    <dimen name="top_panel_h">30dp</dimen>
+    <dimen name="letter_t">28dp</dimen>
+    <dimen name="letter_b">38dp</dimen>
     <dimen name="letter_b_holder">85dp</dimen>
-    <dimen name="letter_t_holder">35dp</dimen>
+    <dimen name="letter_t_holder">30dp</dimen>
 
 
     <dimen name="margin_top_btn">1dp</dimen>
-    <dimen name="text_size_top_btn">20sp</dimen>
+    <dimen name="text_size_top_btn">18sp</dimen>
     <dimen name="text_size_bot_btn">22sp</dimen>
 
 
@@ -20,11 +20,10 @@
     <dimen name="lvl_w">50dp</dimen>
     <dimen name="coins_w">100dp</dimen>
     <dimen name="monets_lvl_shop">50dp</dimen>
-    <dimen name="lvl_txt_size">20sp</dimen>
-    <dimen name="lvl_txt_coins">20sp</dimen>
-    <dimen name="shop_img">20dp</dimen>
+    <dimen name="lvl_txt_size">18sp</dimen>
+    <dimen name="lvl_txt_coins">18sp</dimen>
 
-    <dimen name="wind_blokcs_h">25dp</dimen>
+    <dimen name="wind_blokcs_h">20dp</dimen>
 
     <dimen name="coins_img">20dp</dimen>
     <dimen name="wind_margin">2dp</dimen>
@@ -33,6 +32,90 @@
 
     <dimen name="padding_img_holder">7dp</dimen>
 
+    <dimen name="shop_img">20dp</dimen>
 
 
+
+    <!-- Про нас-->
+
+    <dimen name="txt_zag">18sp</dimen>
+    <dimen name="txt_messeage">14sp</dimen>
+    <dimen name="margin_messeage">5dp</dimen>
+
+    <!-- Підказки-->
+
+    <dimen name="hints_txt">30sp</dimen>
+    <dimen name="hints_txt_all">18sp</dimen>
+    <dimen name="close_txt">27sp</dimen>
+    <dimen name="coin_hints_w">28dp</dimen>
+    <dimen name="coin_hints_h">22dp</dimen>
+
+
+    <!-- Получити монети-->
+
+    <dimen name="tab_h">60dp</dimen>
+
+    <!-- Магаз-->
+
+    <dimen name="txt_baks">23sp</dimen>
+    <dimen name="baks_coins_w">31dp</dimen>
+    <dimen name="baks_coins_h">27dp</dimen>
+
+    <!-- Рейт ас-->
+
+    <dimen name="txt_like_close">25sp</dimen>
+    <dimen name="txt_options">20sp</dimen>
+
+
+
+    <!-- Мейн - меню -->
+
+    <dimen name="circle_w">130dp</dimen>
+    <dimen name="circle_h">65dp</dimen>
+    <dimen name="play_w_h">65dp</dimen>
+    <dimen name="back_w_h">25dp</dimen>
+    <dimen name="txt_lvl">15sp</dimen>
+    <dimen name="txt_coins">15sp</dimen>
+    <dimen name="coin_w">26dp</dimen>
+    <dimen name="coin_h">22dp</dimen>
+    <dimen name="plus_img_w_h">15dp</dimen>
+
+
+    <!-- Гейм-->
+
+
+    <dimen name="margin_between_img_holder">5dp</dimen>
+    <dimen name="padding_img_square">15dp</dimen>
+    <dimen name="margin_img_square">10dp</dimen>
+    <dimen name="margin_monnet_holder">40dp</dimen>
+
+
+    <!-- Ежедневная награда-->
+
+    <dimen name="day">30sp</dimen>
+    <dimen name="day_bot">20sp</dimen>
+    <dimen name="day_m_w">44dp</dimen>
+    <dimen name="day_m_h">40dp</dimen>
+
+
+    <!-- Магаз-->
+    <dimen name="shop_txt">20sp</dimen>
+    <dimen name="shop_m_w">24dp</dimen>
+    <dimen name="shop_m_h">20dp</dimen>
+
+
+    <!-- ВІН-->
+
+    <dimen name="good">28sp</dimen>
+    <dimen name="you_win">17sp</dimen>
+    <dimen name="win_word">23sp</dimen>
+    <dimen name="win_qutation">18sp</dimen>
+    <dimen name="win_next">25sp</dimen>
+    <dimen name="win_txt_m">30sp</dimen>
+    <dimen name="win_m_w">44sp</dimen>
+    <dimen name="win_m_h">40sp</dimen>
+    <dimen name="win_next_w">200dp</dimen>
+    <dimen name="win_next_h">50dp</dimen>
+
+    <dimen name="pad_win_word">10dp</dimen>
 </resources>

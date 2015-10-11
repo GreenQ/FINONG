@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/tab_active"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+   <LinearLayout
+       android:background="@drawable/holder_img"
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+     <LinearLayout
+         android:background="@drawable/holder_img"
+         android:layout_weight="1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <LinearLayout
+             android:gravity="center"
+             android:layout_weight="2"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="День "
+                 android:textSize="@dimen/day"
+                 android:textColor="#FFFFFF"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="1"
+                 android:textSize="@dimen/day"
+                 android:textColor="#FFFFFF"/>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_weight="3"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center">
+
+             <TextView
+                 android:textColor="#FFFFFF"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="10 "
+                 android:textSize="@dimen/day"/>
+
+             <ImageView
+                 android:layout_width="@dimen/day_m_w"
+                 android:layout_height="@dimen/day_m_h"
+                 android:background="@drawable/coin"/>
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+       <LinearLayout
+           android:background="@drawable/tab_active"
+           android:gravity="center"
+           android:layout_weight="2"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:textColor="#FFFFFF"
+               android:textSize="@dimen/day_bot"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Заходите чаще получайте больше"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00487512">
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
