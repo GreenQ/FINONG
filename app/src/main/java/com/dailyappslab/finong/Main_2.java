@@ -14,14 +14,18 @@ public class Main_2 extends TabActivity {
 
         // получаем TabHost
         TabHost tabHost = getTabHost();
-
+//        for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++) {
+//            tabHost.getTabWidget().getChildAt(i).setBackgroundResource(R.drawable.btn_fon1);
+//        }
         // инициализация была выполнена в getTabHost
         // метод setup вызывать не нужно
 
         TabHost.TabSpec tabSpec;
 
+        tabHost.getTabWidget().setDividerDrawable(R.drawable.fon_blur);
+
         tabSpec = tabHost.newTabSpec("tag1");
-        tabSpec.setIndicator("МАГАЗИН");
+        tabSpec.setIndicator("МАГАЗИН", getResources().getDrawable(R.drawable.tab_active));
         tabSpec.setContent(new Intent(this, OneActivity.class));
         tabHost.addTab(tabSpec);
 

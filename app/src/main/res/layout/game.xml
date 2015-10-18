@@ -229,7 +229,7 @@
             android:layout_width="@dimen/letter_t"
             android:layout_height="@dimen/letter_t"
             android:layout_marginRight="@dimen/margin_top_btn"/>
-
+        <!-- Гейм-->
         <Button
             android:textColor="#FFFFFF"
             android:text="2"

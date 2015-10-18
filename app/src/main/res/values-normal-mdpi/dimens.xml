@@ -98,7 +98,7 @@
     <dimen name="day_m_h">40dp</dimen>
 
 
-    <!-- Магаз-->
+    <!-- Магаз--><!-- Гейм-->
     <dimen name="shop_txt">18sp</dimen>
     <dimen name="shop_m_w">22dp</dimen>
     <dimen name="shop_m_h">18dp</dimen>

@@ -110,7 +110,7 @@
             android:textColor="#ffffff"
             android:textSize="@dimen/win_qutation"
             />
-
+        <!-- Гейм-->
 
     </LinearLayout>
 

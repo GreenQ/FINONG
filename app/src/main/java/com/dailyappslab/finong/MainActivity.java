@@ -2,10 +2,15 @@ package com.dailyappslab.finong;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,6 +25,12 @@ public class MainActivity extends Activity {
     SADView sadView;
 
     Preferences preferences;
+
+    AnimationDrawable animation;
+    Animation anim;
+
+    ImageView buttonImage;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +51,12 @@ public class MainActivity extends Activity {
         sadView.loadAd(SADView.LANGUAGE_RU);
 
         StartDailyCoinsActivity(null);
+
+//        buttonImage = (ImageView) findViewById(R.id.play);
+//        buttonImage.setBackgroundResource(R.drawable.btnanim);
+//        animation = (AnimationDrawable) buttonImage.getBackground();
+
+        anim = AnimationUtils.loadAnimation(this, R.anim.btn_anim);
     }
 
     public void StartGovnoActivity(View view)
@@ -50,10 +67,27 @@ public class MainActivity extends Activity {
         overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
     }
 
+    public void StartMarketActivity(View view)
+    {
+        Intent i = new Intent(MainActivity.this, MarketActivity.class);
+        startActivity(i);
+
+        overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
+    }
+
     public void StartGameActivity(View view)
     {
+        //animation.stop();
+        //animation.start();
+        view.startAnimation(anim);
+        anim.setDuration(400);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
         Intent i = new Intent(MainActivity.this, GameActivity.class);
         startActivity(i);
+            }
+        }, 3000);
 
         overridePendingTransition(R.anim.layout_change_in, R.anim.layout_change_out);
     }

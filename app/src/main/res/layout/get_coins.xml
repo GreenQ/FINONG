@@ -147,12 +147,12 @@
 
             <TabWidget
 
-                android:background="@drawable/tab_active"
+                android:background="@drawable/hints"
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/tab_h">
+                android:layout_height="wrap_content">
             </TabWidget>
-
+            <!-- Гейм-->
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"

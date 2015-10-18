@@ -170,22 +170,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/play"
-                    android:layout_width="180dp"
-                    android:layout_height="90dp"
-                    android:background="@drawable/test1"
-                    />
 
-
-                <ImageView
-                    android:id="@+id/about"
-                    android:layout_below="@+id/play"
-                    android:layout_width="180dp"
-                    android:layout_height="90dp"
-                    android:background="@drawable/test2"/>
 
                 <RelativeLayout
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/magaz"
+                    android:onClick="StartMarketActivity"
+                    android:layout_width="@dimen/play_w_h"
+                    android:layout_height="@dimen/play_w_h">
+
+                    <RelativeLayout
+                        android:alpha="1"
+                        android:background="@drawable/fon_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/play_w_h"
+                        android:layout_height="@dimen/play_w_h"
+                        android:background="@drawable/shop"/>
+
+
+            </RelativeLayout>
+                <!-- Гейм-->
+                <RelativeLayout
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/play"
+                    android:layout_below="@+id/magaz"
                     android:onClick="StartGameActivity"
                     android:layout_centerInParent="true"
                     android:layout_width="@dimen/play_w_h"
@@ -200,9 +211,30 @@
                     <ImageView
                         android:layout_width="@dimen/play_w_h"
                         android:layout_height="@dimen/play_w_h"
-                        android:background="@drawable/btn_f6"/>
+                        android:background="@drawable/btn_f7"/>
 
                 </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/play"
+                    android:onClick="StartGameActivity"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/play_w_h"
+                    android:layout_height="@dimen/play_w_h">
+
+                    <RelativeLayout
+                        android:alpha="1"
+                        android:background="@drawable/fon_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/play_w_h"
+                        android:layout_height="@dimen/play_w_h"
+                        android:background="@drawable/o_nas"/>
+
+                </RelativeLayout>
+
             </RelativeLayout>
 
         </LinearLayout>
